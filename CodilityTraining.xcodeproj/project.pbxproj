@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAFE2D0F1DB89CF2001E77AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */; };
+		EAFE2D111DB89CF2001E77AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D101DB89CF2001E77AD /* ViewController.swift */; };
+		EAFE2D141DB89CF2001E77AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D121DB89CF2001E77AD /* Main.storyboard */; };
+		EAFE2D161DB89CF2001E77AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D151DB89CF2001E77AD /* Assets.xcassets */; };
+		EAFE2D191DB89CF2001E77AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */; };
+		EAFE2D241DB89CF2001E77AD /* CodilityTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D231DB89CF2001E77AD /* CodilityTrainingTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFE2D201DB89CF2001E77AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFE2D031DB89CF2001E77AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFE2D0A1DB89CF2001E77AD;
+			remoteInfo = CodilityTraining;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodilityTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAFE2D101DB89CF2001E77AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAFE2D131DB89CF2001E77AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAFE2D151DB89CF2001E77AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFE2D181DB89CF2001E77AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAFE2D1A1DB89CF2001E77AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFE2D1F1DB89CF2001E77AD /* CodilityTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFE2D231DB89CF2001E77AD /* CodilityTrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityTrainingTests.swift; sourceTree = "<group>"; };
+		EAFE2D251DB89CF2001E77AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFE2D081DB89CF2001E77AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE2D1C1DB89CF2001E77AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAFE2D021DB89CF2001E77AD = {
+			isa = PBXGroup;
+			children = (
+				EAFE2D0D1DB89CF2001E77AD /* CodilityTraining */,
+				EAFE2D221DB89CF2001E77AD /* CodilityTrainingTests */,
+				EAFE2D0C1DB89CF2001E77AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFE2D0C1DB89CF2001E77AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */,
+				EAFE2D1F1DB89CF2001E77AD /* CodilityTrainingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFE2D0D1DB89CF2001E77AD /* CodilityTraining */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */,
+				EAFE2D101DB89CF2001E77AD /* ViewController.swift */,
+				EAFE2D121DB89CF2001E77AD /* Main.storyboard */,
+				EAFE2D151DB89CF2001E77AD /* Assets.xcassets */,
+				EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */,
+				EAFE2D1A1DB89CF2001E77AD /* Info.plist */,
+			);
+			path = CodilityTraining;
+			sourceTree = "<group>";
+		};
+		EAFE2D221DB89CF2001E77AD /* CodilityTrainingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE2D231DB89CF2001E77AD /* CodilityTrainingTests.swift */,
+				EAFE2D251DB89CF2001E77AD /* Info.plist */,
+			);
+			path = CodilityTrainingTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFE2D0A1DB89CF2001E77AD /* CodilityTraining */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFE2D281DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTraining" */;
+			buildPhases = (
+				EAFE2D071DB89CF2001E77AD /* Sources */,
+				EAFE2D081DB89CF2001E77AD /* Frameworks */,
+				EAFE2D091DB89CF2001E77AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodilityTraining;
+			productName = CodilityTraining;
+			productReference = EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFE2D1E1DB89CF2001E77AD /* CodilityTrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFE2D2B1DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTrainingTests" */;
+			buildPhases = (
+				EAFE2D1B1DB89CF2001E77AD /* Sources */,
+				EAFE2D1C1DB89CF2001E77AD /* Frameworks */,
+				EAFE2D1D1DB89CF2001E77AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFE2D211DB89CF2001E77AD /* PBXTargetDependency */,
+			);
+			name = CodilityTrainingTests;
+			productName = CodilityTrainingTests;
+			productReference = EAFE2D1F1DB89CF2001E77AD /* CodilityTrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFE2D031DB89CF2001E77AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = tm;
+				TargetAttributes = {
+					EAFE2D0A1DB89CF2001E77AD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+					};
+					EAFE2D1E1DB89CF2001E77AD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EAFE2D0A1DB89CF2001E77AD;
+					};
+				};
+			};
+			buildConfigurationList = EAFE2D061DB89CF2001E77AD /* Build configuration list for PBXProject "CodilityTraining" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAFE2D021DB89CF2001E77AD;
+			productRefGroup = EAFE2D0C1DB89CF2001E77AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFE2D0A1DB89CF2001E77AD /* CodilityTraining */,
+				EAFE2D1E1DB89CF2001E77AD /* CodilityTrainingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFE2D091DB89CF2001E77AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE2D191DB89CF2001E77AD /* LaunchScreen.storyboard in Resources */,
+				EAFE2D161DB89CF2001E77AD /* Assets.xcassets in Resources */,
+				EAFE2D141DB89CF2001E77AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE2D1D1DB89CF2001E77AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFE2D071DB89CF2001E77AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE2D111DB89CF2001E77AD /* ViewController.swift in Sources */,
+				EAFE2D0F1DB89CF2001E77AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE2D1B1DB89CF2001E77AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE2D241DB89CF2001E77AD /* CodilityTrainingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFE2D211DB89CF2001E77AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFE2D0A1DB89CF2001E77AD /* CodilityTraining */;
+			targetProxy = EAFE2D201DB89CF2001E77AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAFE2D121DB89CF2001E77AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFE2D131DB89CF2001E77AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFE2D181DB89CF2001E77AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAFE2D261DB89CF2001E77AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAFE2D271DB89CF2001E77AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFE2D291DB89CF2001E77AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = CodilityTraining/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CodilityTraining;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EAFE2D2A1DB89CF2001E77AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = CodilityTraining/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CodilityTraining;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EAFE2D2C1DB89CF2001E77AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = CodilityTrainingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CodilityTrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodilityTraining.app/CodilityTraining";
+			};
+			name = Debug;
+		};
+		EAFE2D2D1DB89CF2001E77AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = CodilityTrainingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CodilityTrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodilityTraining.app/CodilityTraining";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFE2D061DB89CF2001E77AD /* Build configuration list for PBXProject "CodilityTraining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFE2D261DB89CF2001E77AD /* Debug */,
+				EAFE2D271DB89CF2001E77AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFE2D281DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTraining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFE2D291DB89CF2001E77AD /* Debug */,
+				EAFE2D2A1DB89CF2001E77AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAFE2D2B1DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFE2D2C1DB89CF2001E77AD /* Debug */,
+				EAFE2D2D1DB89CF2001E77AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAFE2D031DB89CF2001E77AD /* Project object */;
+}
