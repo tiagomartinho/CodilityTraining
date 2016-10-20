@@ -12,7 +12,7 @@
 		EAFE2D141DB89CF2001E77AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D121DB89CF2001E77AD /* Main.storyboard */; };
 		EAFE2D161DB89CF2001E77AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D151DB89CF2001E77AD /* Assets.xcassets */; };
 		EAFE2D191DB89CF2001E77AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */; };
-		EAFE2D241DB89CF2001E77AD /* CodilityTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D231DB89CF2001E77AD /* CodilityTrainingTests.swift */; };
+		EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D231DB89CF2001E77AD /* FrogRiverOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 		EAFE2D181DB89CF2001E77AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFE2D1A1DB89CF2001E77AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFE2D1F1DB89CF2001E77AD /* CodilityTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAFE2D231DB89CF2001E77AD /* CodilityTrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityTrainingTests.swift; sourceTree = "<group>"; };
+		EAFE2D231DB89CF2001E77AD /* FrogRiverOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogRiverOne.swift; sourceTree = "<group>"; };
 		EAFE2D251DB89CF2001E77AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,12 +77,7 @@
 		EAFE2D0D1DB89CF2001E77AD /* CodilityTraining */ = {
 			isa = PBXGroup;
 			children = (
-				EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */,
-				EAFE2D101DB89CF2001E77AD /* ViewController.swift */,
-				EAFE2D121DB89CF2001E77AD /* Main.storyboard */,
-				EAFE2D151DB89CF2001E77AD /* Assets.xcassets */,
-				EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */,
-				EAFE2D1A1DB89CF2001E77AD /* Info.plist */,
+				EAFE2D2E1DB89D14001E77AD /* Supporting Files */,
 			);
 			path = CodilityTraining;
 			sourceTree = "<group>";
@@ -90,10 +85,31 @@
 		EAFE2D221DB89CF2001E77AD /* CodilityTrainingTests */ = {
 			isa = PBXGroup;
 			children = (
-				EAFE2D231DB89CF2001E77AD /* CodilityTrainingTests.swift */,
-				EAFE2D251DB89CF2001E77AD /* Info.plist */,
+				EAFE2D231DB89CF2001E77AD /* FrogRiverOne.swift */,
+				EAFE2D2F1DB89D1D001E77AD /* Supporting Files */,
 			);
 			path = CodilityTrainingTests;
+			sourceTree = "<group>";
+		};
+		EAFE2D2E1DB89D14001E77AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */,
+				EAFE2D101DB89CF2001E77AD /* ViewController.swift */,
+				EAFE2D121DB89CF2001E77AD /* Main.storyboard */,
+				EAFE2D151DB89CF2001E77AD /* Assets.xcassets */,
+				EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */,
+				EAFE2D1A1DB89CF2001E77AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAFE2D2F1DB89D1D001E77AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE2D251DB89CF2001E77AD /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFE2D241DB89CF2001E77AD /* CodilityTrainingTests.swift in Sources */,
+				EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
