@@ -64,6 +64,17 @@ class MaxCounters: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
+    func testPerformanceExample() {
+        let N = 10000
+        let increaseCounter = [Int](repeating: 1, count: N)
+        let maxCounter = [Int](repeating: N + 1, count: N)
+        var input = increaseCounter + maxCounter
+
+        self.measure {
+            _ = self.solution(N, &input)
+        }
+    }
+
     public func solution(_ N : Int, _ A : inout [Int]) -> [Int] {
         var counters = [Int](repeating: 0, count: N)
         var maxCounter = 0
