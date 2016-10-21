@@ -1,5 +1,4 @@
 import XCTest
-@testable import CodilityTraining
 
 class FrogRiverOne: XCTestCase {
 
@@ -32,21 +31,20 @@ class FrogRiverOne: XCTestCase {
 
         XCTAssertEqual(expected, output)
     }
-}
 
-public func solution(_ X : Int, _ A : inout [Int]) -> Int {
-    if X <= 0 {
+    public func solution(_ X : Int, _ A : inout [Int]) -> Int {
+        if X <= 0 {
+            return -1
+        }
+        var leaves = Set<Int>()
+        for (index, leaf) in A.enumerated() {
+            if leaf <= X {
+                leaves.insert(leaf)
+            }
+            if leaves.count == X {
+                return index
+            }
+        }
         return -1
     }
-    var leaves = Set<Int>()
-    for (index, leaf) in A.enumerated() {
-        if leaf <= X {
-            leaves.insert(leaf)
-        }
-        if leaves.count == X {
-            return index
-        }
-    }
-    return -1
 }
-
