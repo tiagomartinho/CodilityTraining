@@ -2,7 +2,7 @@ import XCTest
 
 class MaxCounters: XCTestCase {
 
-    func DISABLED_testExample() {
+    func testExample() {
         let expected = [3, 2, 2, 4, 2]
         let N = 5
         var input = [3, 4, 4, 6, 1, 4, 4]
@@ -54,12 +54,29 @@ class MaxCounters: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
+    func testMaxCounters() {
+        let expected = [2, 2]
+        let N = 2
+        var input = [1, 2, 1, 3]
+
+        let output = solution(N, &input)
+
+        XCTAssertEqual(expected, output)
+    }
+
     public func solution(_ N : Int, _ A : inout [Int]) -> [Int] {
         var counters = [Int](repeating: 0, count: N)
+        var maxCounter = 0
         for operation in A {
             let index = operation - 1
             if index >= 0 && index < counters.count {
                 counters[index] = counters[index] + 1
+                if counters[index] > maxCounter {
+                    maxCounter = counters[index]
+                }
+            }
+            if operation == (N + 1) {
+                counters = [Int](repeating: maxCounter, count: N)
             }
         }
         return counters
