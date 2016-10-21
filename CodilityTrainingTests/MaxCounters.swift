@@ -42,11 +42,25 @@ class MaxCounters: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
+    func testWrongInputIsIgnored() {
+        let expected = [2, 1]
+        let N = 2
+        let wrongInput = 9999
+        let anotherWrongInput = -9999
+        var input = [1, 2, wrongInput, 1, anotherWrongInput]
+
+        let output = solution(N, &input)
+
+        XCTAssertEqual(expected, output)
+    }
+
     public func solution(_ N : Int, _ A : inout [Int]) -> [Int] {
         var counters = [Int](repeating: 0, count: N)
         for operation in A {
             let index = operation - 1
-            counters[index] = counters[index] + 1
+            if index >= 0 && index < counters.count {
+                counters[index] = counters[index] + 1
+            }
         }
         return counters
     }
