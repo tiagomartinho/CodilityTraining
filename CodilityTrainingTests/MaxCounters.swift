@@ -76,20 +76,27 @@ class MaxCounters: XCTestCase {
     }
 
     public func solution(_ N : Int, _ A : inout [Int]) -> [Int] {
-        var counters = [Int](repeating: 0, count: N)
+        var counters: [Int]?
+        counters = [Int](repeating: 0, count: N)
         var maxCounter = 0
         for operation in A {
             let index = operation - 1
-            if index >= 0 && index < counters.count {
-                counters[index] = counters[index] + 1
-                if counters[index] > maxCounter {
-                    maxCounter = counters[index]
+            if index >= 0 && index < N {
+                if counters == nil {
+                    counters = [Int](repeating: maxCounter, count: N)
+                }
+                counters![index] = counters![index] + 1
+                if counters![index] > maxCounter {
+                    maxCounter = counters![index]
                 }
             }
             if operation == (N + 1) {
-                counters = [Int](repeating: maxCounter, count: N)
+                counters = nil
             }
         }
-        return counters
+        if counters == nil {
+            counters = [Int](repeating: maxCounter, count: N)
+        }
+        return counters!
     }
 }
