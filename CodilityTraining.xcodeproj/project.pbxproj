@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */; };
 		EAFE2D0F1DB89CF2001E77AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */; };
 		EAFE2D111DB89CF2001E77AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D101DB89CF2001E77AD /* ViewController.swift */; };
 		EAFE2D141DB89CF2001E77AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D121DB89CF2001E77AD /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxCounters.swift; sourceTree = "<group>"; };
 		EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodilityTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFE2D101DB89CF2001E77AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				EAFE2D231DB89CF2001E77AD /* FrogRiverOne.swift */,
+				EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */,
 				EAFE2D2F1DB89D1D001E77AD /* Supporting Files */,
 			);
 			path = CodilityTrainingTests;
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */,
+				EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +432,7 @@
 				EAFE2D2A1DB89CF2001E77AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAFE2D2B1DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTrainingTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +441,7 @@
 				EAFE2D2D1DB89CF2001E77AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
