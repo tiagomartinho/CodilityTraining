@@ -68,7 +68,7 @@ class MaxCounters: XCTestCase {
         let N = 10000
         let increaseCounter = [Int](repeating: 1, count: N)
         let maxCounter = [Int](repeating: N + 1, count: N)
-        var input = increaseCounter + maxCounter
+        var input = increaseCounter + maxCounter + increaseCounter + maxCounter
 
         self.measure {
             _ = self.solution(N, &input)
@@ -76,8 +76,7 @@ class MaxCounters: XCTestCase {
     }
 
     public func solution(_ N : Int, _ A : inout [Int]) -> [Int] {
-        var counters: [Int]?
-        counters = [Int](repeating: 0, count: N)
+        var counters: [Int]? = [Int](repeating: 0, count: N)
         var maxCounter = 0
         for operation in A {
             let index = operation - 1
@@ -94,9 +93,10 @@ class MaxCounters: XCTestCase {
                 counters = nil
             }
         }
-        if counters == nil {
-            counters = [Int](repeating: maxCounter, count: N)
+        if let counters = counters {
+            return counters
+        } else {
+            return [Int](repeating: maxCounter, count: N)
         }
-        return counters!
     }
 }
