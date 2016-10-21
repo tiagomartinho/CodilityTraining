@@ -22,8 +22,22 @@ class MaxCounters: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
+    func testIncreaseOneCounter() {
+        let expected = [1]
+        let N = 1
+        var input = [1]
+
+        let output = solution(N, &input)
+
+        XCTAssertEqual(expected, output)
+    }
+
     public func solution(_ N : Int, _ A : inout [Int]) -> [Int] {
-        let counters = [Int](repeating: 0, count: N)
+        var counters = [Int](repeating: 0, count: N)
+        for operation in A {
+            let index = operation - 1
+            counters[index] = counters[index] + 1
+        }
         return counters
     }
 }
