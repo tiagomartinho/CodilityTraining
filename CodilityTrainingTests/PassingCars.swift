@@ -56,6 +56,17 @@ class PassingCars: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
+    func testPerformanceExample() {
+        let N = 1000
+        let travelingEast = [Int](repeating: 0, count: N)
+        let travelingWest = [Int](repeating: 1, count: N)
+        var input = travelingEast + travelingWest
+
+        self.measure {
+            _ = self.solution(&input)
+        }
+    }
+
     public func solution(_ A : inout [Int]) -> Int {
         let travelingEast = 0
         let travelingWest = 1
