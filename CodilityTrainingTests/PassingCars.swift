@@ -67,6 +67,24 @@ class PassingCars: XCTestCase {
         }
     }
 
+    func testCarsTravellingWest() {
+        let expected = 3
+        var input = [0, 0, 1, 1, 1]
+
+        let output = carsTravellingWest(&input)
+
+        XCTAssertEqual(expected, output)
+    }
+
+    func testCarsTravellingEast() {
+        let expected = 2
+        var input = [0, 0, 1, 1, 1]
+
+        let output = carsTravellingEast(&input)
+
+        XCTAssertEqual(expected, output)
+    }
+
     public func solution(_ A : inout [Int]) -> Int {
         let travelingEast = 0
         let travelingWest = 1
@@ -82,5 +100,15 @@ class PassingCars: XCTestCase {
             }
         }
         return pairsOfPassingCars
+    }
+
+    public func carsTravellingWest(_ A : inout [Int]) -> Int {
+        return A.reduce(0) { (result, next) -> Int in
+            return result + next
+        }
+    }
+
+    public func carsTravellingEast(_ A : inout [Int]) -> Int {
+        return A.count - carsTravellingWest(&A)
     }
 }
