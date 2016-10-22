@@ -29,6 +29,15 @@ class PassingCars: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
+    func testMultiplePairPassingWithOnlyOneEastCar() {
+        let expected = 3
+        var input = [0, 1, 1, 1]
+
+        let output = solution(&input)
+
+        XCTAssertEqual(expected, output)
+    }
+
     public func solution(_ A : inout [Int]) -> Int {
         let travelingEast = 0
         let travelingWest = 1
