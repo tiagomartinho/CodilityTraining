@@ -57,58 +57,52 @@ class PassingCars: XCTestCase {
     }
 
     func testPerformanceExample() {
-        let N = 1000
+        let N = 50000
         let travelingEast = [Int](repeating: 0, count: N)
         let travelingWest = [Int](repeating: 1, count: N)
         var input = travelingEast + travelingWest
 
         self.measure {
-            _ = self.solution(&input)
+            let expected = -1
+            let output = self.solution(&input)
+            XCTAssertEqual(expected, output)
         }
-    }
-
-    func testCarsTravellingWest() {
-        let expected = 3
-        var input = [0, 0, 1, 1, 1]
-
-        let output = carsTravellingWest(&input)
-
-        XCTAssertEqual(expected, output)
-    }
-
-    func testCarsTravellingEast() {
-        let expected = 2
-        var input = [0, 0, 1, 1, 1]
-
-        let output = carsTravellingEast(&input)
-
-        XCTAssertEqual(expected, output)
     }
 
     public func solution(_ A : inout [Int]) -> Int {
         let travelingEast = 0
         let travelingWest = 1
 
-        var pairsOfPassingCars = 0
-        for (index, car) in A.enumerated() {
-            if car == travelingEast {
-                for possiblePair in A.suffix(from: index) {
-                    if possiblePair == travelingWest {
-                        pairsOfPassingCars += 1
-                    }
+        var counting = false
+        var currentPair = 0
+        var pairsOfPassingCarsAndMultipliers = [(Int, Int)]()
+        for car in A {
+            if counting {
+                if car == travelingWest {
+                    pairsOfPassingCarsAndMultipliers[currentPair].0 += 1
+                }
+                if car == travelingEast {
+                    currentPair += 1
+                    pairsOfPassingCarsAndMultipliers.append((0, currentPair + 1))
+                }
+            } else {
+                if car == travelingEast {
+                    counting = true
+                    pairsOfPassingCarsAndMultipliers.append((0, 1))
                 }
             }
         }
-        return pairsOfPassingCars
-    }
 
-    public func carsTravellingWest(_ A : inout [Int]) -> Int {
-        return A.reduce(0) { (result, next) -> Int in
-            return result + next
+        return pairsOfPassingCarsAndMultipliers.reduce(0) { (accumulator: Int, pairsOfPassingCarsAndMultipliers: (Int, Int)) -> Int in
+            if accumulator == -1 || accumulator > 1000000000 {
+                return -1
+            }
+            let result = accumulator + pairsOfPassingCarsAndMultipliers.0 * pairsOfPassingCarsAndMultipliers.1
+            if result > 1000000000 {
+                return -1
+            } else {
+                return result
+            }
         }
-    }
-
-    public func carsTravellingEast(_ A : inout [Int]) -> Int {
-        return A.count - carsTravellingWest(&A)
     }
 }
