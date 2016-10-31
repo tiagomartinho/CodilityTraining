@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */; };
 		EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */; };
+		EAF3F8501DC77AC700D6FD4A /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */; };
 		EAFE2D0F1DB89CF2001E77AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */; };
 		EAFE2D111DB89CF2001E77AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D101DB89CF2001E77AD /* ViewController.swift */; };
 		EAFE2D141DB89CF2001E77AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D121DB89CF2001E77AD /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassingCars.swift; sourceTree = "<group>"; };
 		EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxCounters.swift; sourceTree = "<group>"; };
+		EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDiv.swift; sourceTree = "<group>"; };
 		EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodilityTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFE2D101DB89CF2001E77AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				EAFE2D231DB89CF2001E77AD /* FrogRiverOne.swift */,
 				EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */,
 				EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */,
+				EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */,
 				EAFE2D2F1DB89D1D001E77AD /* Supporting Files */,
 			);
 			path = CodilityTrainingTests;
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */,
+				EAF3F8501DC77AC700D6FD4A /* CountDiv.swift in Sources */,
 				EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */,
 				EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */,
 			);
