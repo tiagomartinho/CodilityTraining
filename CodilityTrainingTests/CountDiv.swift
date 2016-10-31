@@ -10,7 +10,13 @@ class CountDiv: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
-public func solution(_ A : Int, _ B : Int, _ K : Int) -> Int {
-        return 3
+    public func solution(_ A : Int, _ B : Int, _ K : Int) -> Int {
+        var divisibleNumbers = 0
+        for i in A...B {
+            if i % K == 0 {
+                divisibleNumbers += 1
+            }
+        }
+        return divisibleNumbers
     }
 }
