@@ -10,6 +10,12 @@ class CountDiv: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
+    func testPerformance() {
+        self.measure {
+            _ = self.solution(100, 10000000, 2)
+        }
+    }
+
     public func solution(_ A : Int, _ B : Int, _ K : Int) -> Int {
         var divisibleNumbers = 0
         for i in A...B {
