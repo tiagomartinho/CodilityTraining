@@ -17,12 +17,19 @@ class CountDiv: XCTestCase {
     }
 
     public func solution(_ A : Int, _ B : Int, _ K : Int) -> Int {
-        var divisibleNumbers = 0
-        for i in A...B {
-            if i % K == 0 {
-                divisibleNumbers += 1
-            }
+        let b = integersFromZero(to: B, divisibleBy: K)
+        var a = integersFromZero(to: A, divisibleBy: K)
+        if isInclusive(A, K) {
+            a -= 1
         }
-        return divisibleNumbers
+        return b-a
+    }
+
+    func integersFromZero(to: Int, divisibleBy: Int) -> Int {
+        return to/divisibleBy + 1
+    }
+
+    func isInclusive(_ A : Int, _ K : Int) -> Bool {
+        return A%K == 0
     }
 }
