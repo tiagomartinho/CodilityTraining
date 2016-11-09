@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */; };
+		EAB074C41DD3584D001416D9 /* GenomicRangeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */; };
 		EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */; };
 		EAF3F8501DC77AC700D6FD4A /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */; };
 		EAFE2D0F1DB89CF2001E77AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassingCars.swift; sourceTree = "<group>"; };
+		EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenomicRangeQuery.swift; sourceTree = "<group>"; };
 		EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxCounters.swift; sourceTree = "<group>"; };
 		EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDiv.swift; sourceTree = "<group>"; };
 		EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodilityTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */,
 				EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */,
 				EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */,
+				EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */,
 				EAFE2D2F1DB89D1D001E77AD /* Supporting Files */,
 			);
 			path = CodilityTrainingTests;
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB074C41DD3584D001416D9 /* GenomicRangeQuery.swift in Sources */,
 				EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */,
 				EAF3F8501DC77AC700D6FD4A /* CountDiv.swift in Sources */,
 				EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */,
