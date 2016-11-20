@@ -26,18 +26,19 @@ class GenomicRangeQuery: XCTestCase {
 
     public func solution(_ S : inout String, _ P : inout [Int], _ Q : inout [Int]) -> [Int] {
         var minimalImpactFactors = [Int]()
-        for (query, _) in P.enumerated() {
-            let minimalImpact = calculatesMinimalImpact(startIndex: P[query], endIndex: Q[query], S: S)
+        for (index, _) in P.enumerated() {
+            let query = Query(startIndex: P[index], endIndex: Q[index])
+            let minimalImpact = calculatesMinimalImpact(query: query, S: S)
             minimalImpactFactors.append(minimalImpact)
         }
         return minimalImpactFactors
     }
 
-    public func calculatesMinimalImpact(startIndex: Int, endIndex: Int, S: String) -> Int {
+    public func calculatesMinimalImpact(query: Query, S: String) -> Int {
         let minimumImpact = 1
         let impactFactors: [Character: Int] = ["A": 1, "C": 2, "G": 3, "T": 4]
         var minimalImpactForQuery = 4
-        for index in startIndex...endIndex {
+        for index in query.startIndex...query.endIndex {
             let nucleotide = S[S.index(S.startIndex, offsetBy: index)]
             if let impact = impactFactors[nucleotide] {
                 if impact == minimumImpact { return minimumImpact }
@@ -48,4 +49,9 @@ class GenomicRangeQuery: XCTestCase {
         }
         return minimalImpactForQuery
     }
+}
+
+public struct Query {
+    let startIndex: Int
+    let endIndex: Int
 }
