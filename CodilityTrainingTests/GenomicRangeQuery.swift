@@ -24,7 +24,6 @@ class GenomicRangeQuery: XCTestCase {
         XCTAssertEqual(expected, output)
     }
 
-
     public func solution(_ S : inout String, _ P : inout [Int], _ Q : inout [Int]) -> [Int] {
         var minimalImpactFactors = [Int]()
         for (query, _) in P.enumerated() {
@@ -35,11 +34,13 @@ class GenomicRangeQuery: XCTestCase {
     }
 
     public func calculatesMinimalImpact(startIndex: Int, endIndex: Int, S: String) -> Int {
+        let minimumImpact = 1
         let impactFactors: [Character: Int] = ["A": 1, "C": 2, "G": 3, "T": 4]
         var minimalImpactForQuery = 4
         for index in startIndex...endIndex {
             let nucleotide = S[S.index(S.startIndex, offsetBy: index)]
             if let impact = impactFactors[nucleotide] {
+                if impact == minimumImpact { return minimumImpact }
                 if impact < minimalImpactForQuery {
                     minimalImpactForQuery = impact
                 }
