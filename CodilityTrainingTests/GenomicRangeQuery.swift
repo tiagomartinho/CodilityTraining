@@ -26,9 +26,16 @@ class GenomicRangeQuery: XCTestCase {
 
     public func solution(_ S : inout String, _ P : inout [Int], _ Q : inout [Int]) -> [Int] {
         var minimalImpactFactors = [Int]()
+        var cache = [Query:Int]()
         for (index, _) in P.enumerated() {
             let query = Query(startIndex: P[index], endIndex: Q[index])
-            let minimalImpact = calculatesMinimalImpact(query: query, S: S)
+            let minimalImpact: Int
+            if let cachedImpact = cache[query] {
+                minimalImpact = cachedImpact
+            } else {
+                minimalImpact = calculatesMinimalImpact(query: query, S: S)
+                cache[query] = minimalImpact
+            }
             minimalImpactFactors.append(minimalImpact)
         }
         return minimalImpactFactors
@@ -54,4 +61,16 @@ class GenomicRangeQuery: XCTestCase {
 public struct Query {
     let startIndex: Int
     let endIndex: Int
+}
+
+extension Query: Hashable {
+    public var hashValue: Int {
+        return startIndex.hashValue + endIndex.hashValue
+    }
+}
+
+extension Query: Equatable { }
+
+public func ==(lhs: Query, rhs: Query) -> Bool {
+    return lhs.startIndex == rhs.startIndex && lhs.startIndex == rhs.startIndex
 }
