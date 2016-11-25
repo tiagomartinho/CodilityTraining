@@ -40,20 +40,25 @@ class GenomicRangeQuery: XCTestCase {
         }
     }
 
+    let impactFactors: [Character: Int] = ["A": 1, "C": 2, "G": 3, "T": 4]
+
     public func solution(_ S : inout String, _ P : inout [Int], _ Q : inout [Int]) -> [Int] {
-        let impactFactors: [Character: Int] = ["A": 1, "C": 2, "G": 3, "T": 4]
-        var prefixSum = computePrefixes(S)
+        let prefixSum = computePrefixes(S)
+        return calculateMinimal(P: P, Q: Q, prefixSum: prefixSum)
+    }
+
+    public func calculateMinimal(P: [Int], Q: [Int], prefixSum: [[Int]]) -> [Int] {
         var result = [Int](repeating: 0, count: P.count)
         for (index,_) in P.enumerated() {
-            let x = P[index]
-            let y = Q[index]
-            for (a,_) in impactFactors.enumerated() {
-                var sub = 0
-                if x-1 >= 0 {
-                    sub = prefixSum[a][x-1]
+            let start = P[index]
+            let end = Q[index]
+            for (nucleotide,_) in impactFactors.enumerated() {
+                var minimum = 0
+                if start - 1 >= 0 {
+                    minimum = prefixSum[nucleotide][start-1]
                 }
-                if prefixSum[a][y] - sub > 0 {
-                    result[index] = a + 1
+                if prefixSum[nucleotide][end] - minimum > 0 {
+                    result[index] = nucleotide + 1
                     break
                 }
             }
@@ -62,7 +67,6 @@ class GenomicRangeQuery: XCTestCase {
     }
 
     public func computePrefixes(_ S: String) -> [[Int]] {
-        let impactFactors: [Character: Int] = ["A": 1, "C": 2, "G": 3, "T": 4]
         let characters = [Int](repeating: 0, count: S.characters.count)
         var prefixSum = [[Int]](repeating: characters, count: impactFactors.count)
         for (index,nucleotide) in S.characters.enumerated() {
