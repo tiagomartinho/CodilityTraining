@@ -1,6 +1,6 @@
 import XCTest
 
-class MinAvgTwoSliceTest: XCTestCase {
+class MinAvgTwoSlice: XCTestCase {
 
     func testExample() {
         let expected = 1
