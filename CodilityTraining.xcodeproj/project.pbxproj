@@ -10,6 +10,7 @@
 		2437E39F1DF02796008C8E93 /* MinAvgTwoSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437E39E1DF02796008C8E93 /* MinAvgTwoSlice.swift */; };
 		24D0178F1DFACEA700E92AB8 /* Distinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0178E1DFACEA700E92AB8 /* Distinct.swift */; };
 		24D017911DFAD01400E92AB8 /* MaxProductOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */; };
+		24E3E7A11DFC1BE700E2DCE6 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3E7A01DFC1BE700E2DCE6 /* Triangle.swift */; };
 		EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */; };
 		EAB074C41DD3584D001416D9 /* GenomicRangeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */; };
 		EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */; };
@@ -36,6 +37,7 @@
 		2437E39E1DF02796008C8E93 /* MinAvgTwoSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinAvgTwoSlice.swift; sourceTree = "<group>"; };
 		24D0178E1DFACEA700E92AB8 /* Distinct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distinct.swift; sourceTree = "<group>"; };
 		24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxProductOfThree.swift; sourceTree = "<group>"; };
+		24E3E7A01DFC1BE700E2DCE6 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassingCars.swift; sourceTree = "<group>"; };
 		EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenomicRangeQuery.swift; sourceTree = "<group>"; };
 		EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxCounters.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				2437E39E1DF02796008C8E93 /* MinAvgTwoSlice.swift */,
 				24D0178E1DFACEA700E92AB8 /* Distinct.swift */,
 				24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */,
+				24E3E7A01DFC1BE700E2DCE6 /* Triangle.swift */,
 				EAFE2D2F1DB89D1D001E77AD /* Supporting Files */,
 			);
 			path = CodilityTrainingTests;
@@ -250,6 +253,7 @@
 				EAB074C41DD3584D001416D9 /* GenomicRangeQuery.swift in Sources */,
 				EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */,
 				24D0178F1DFACEA700E92AB8 /* Distinct.swift in Sources */,
+				24E3E7A11DFC1BE700E2DCE6 /* Triangle.swift in Sources */,
 				EAF3F8501DC77AC700D6FD4A /* CountDiv.swift in Sources */,
 				2437E39F1DF02796008C8E93 /* MinAvgTwoSlice.swift in Sources */,
 				EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */,
