@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243423E61E1E996F00B4812A /* NumberOfDiscIntersections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243423E51E1E996F00B4812A /* NumberOfDiscIntersections.swift */; };
 		2437E39F1DF02796008C8E93 /* MinAvgTwoSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437E39E1DF02796008C8E93 /* MinAvgTwoSlice.swift */; };
 		24D0178F1DFACEA700E92AB8 /* Distinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0178E1DFACEA700E92AB8 /* Distinct.swift */; };
 		24D017911DFAD01400E92AB8 /* MaxProductOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		243423E51E1E996F00B4812A /* NumberOfDiscIntersections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfDiscIntersections.swift; sourceTree = "<group>"; };
 		2437E39E1DF02796008C8E93 /* MinAvgTwoSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinAvgTwoSlice.swift; sourceTree = "<group>"; };
 		24D0178E1DFACEA700E92AB8 /* Distinct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distinct.swift; sourceTree = "<group>"; };
 		24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxProductOfThree.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				24D0178E1DFACEA700E92AB8 /* Distinct.swift */,
 				24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */,
 				24E3E7A01DFC1BE700E2DCE6 /* Triangle.swift */,
+				243423E51E1E996F00B4812A /* NumberOfDiscIntersections.swift */,
 				EAFE2D2F1DB89D1D001E77AD /* Supporting Files */,
 			);
 			path = CodilityTrainingTests;
@@ -259,6 +262,7 @@
 				EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */,
 				24D017911DFAD01400E92AB8 /* MaxProductOfThree.swift in Sources */,
 				EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */,
+				243423E61E1E996F00B4812A /* NumberOfDiscIntersections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
