@@ -34,30 +34,44 @@ class NumberOfDiscIntersections: XCTestCase {
         XCTAssertEqual(expected, result)
     }
 
+    let maxIntersections = 10_000_000
+
     public func solution(_ A : inout [Int]) -> Int {
-        let maxIntersections = 10_000_000
+
+        let (upperRange, lowerRange) = calculateUpperAndLowerRange(A)
+
+        var rangeLowerIndex = 0
         var intersections = 0
-        var circles = [Set<Int>]()
+
+        for rangeUpperIndex in 0..<A.count {
+
+            while rangeLowerIndex < A.count && upperRange[rangeUpperIndex] >= lowerRange[rangeLowerIndex] {
+                rangeLowerIndex += 1
+            }
+
+            intersections += rangeLowerIndex - rangeUpperIndex - 1
+
+            if intersections > maxIntersections {
+                return -1
+            }
+        }
+        
+        return intersections
+    }
+
+    func calculateUpperAndLowerRange(_ A: [Int]) -> ([Int], [Int]) {
+        let discsCount = A.count
+        var upperRange = [Int](repeating: 0, count: discsCount)
+        var lowerRange = [Int](repeating: 0, count: discsCount)
 
         for (center,radius) in A.enumerated() {
-            var circle = Set<Int>()
-            for point in center-radius...center+radius {
-                circle.insert(point)
-            }
-            circles.append(circle)
+            upperRange[center] = center + radius
+            lowerRange[center] = center - radius
         }
 
-        for (index,circle) in circles.enumerated() {
-            for otherCircle in circles.suffix(from: index + 1) {
-                if !circle.intersection(otherCircle).isEmpty {
-                    intersections += 1
-                    if intersections >= maxIntersections {
-                        return -1
-                    }
-                }
-            }
-        }
+        upperRange.sort()
+        lowerRange.sort()
 
-        return intersections
+        return (upperRange, lowerRange)
     }
 }
