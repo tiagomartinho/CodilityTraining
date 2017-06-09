@@ -30,6 +30,23 @@ class Brackets: XCTestCase {
         assert(input: "({[", output: 0)
     }
 
+    func testPerformanceExample() {
+        let N = 100000
+        var S = ""
+        for _ in 1...N {
+            S.append("(")
+        }
+        for _ in 1...N {
+            S.append(")")
+        }
+
+        self.measure {
+            let expected = 1
+            let output = self.solution(&S)
+            XCTAssertEqual(expected, output)
+        }
+    }
+
     private func assert(input: String, output: Int) {
         let expected = output
         var string = input
