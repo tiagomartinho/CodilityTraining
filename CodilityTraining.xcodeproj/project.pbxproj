@@ -204,7 +204,6 @@
 						DevelopmentTeam = 4C34FT6ABU;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
-						TestTargetID = EAFE2D0A1DB89CF2001E77AD;
 					};
 				};
 			};
@@ -445,7 +444,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = CodilityTrainingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -453,7 +451,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodilityTraining.app/CodilityTraining";
 			};
 			name = Debug;
 		};
@@ -461,7 +458,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = CodilityTrainingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -469,7 +465,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodilityTraining.app/CodilityTraining";
 			};
 			name = Release;
 		};
