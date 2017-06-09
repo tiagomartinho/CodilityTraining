@@ -18,23 +18,8 @@
 		EAB074C41DD3584D001416D9 /* GenomicRangeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */; };
 		EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */; };
 		EAF3F8501DC77AC700D6FD4A /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */; };
-		EAFE2D0F1DB89CF2001E77AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */; };
-		EAFE2D111DB89CF2001E77AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D101DB89CF2001E77AD /* ViewController.swift */; };
-		EAFE2D141DB89CF2001E77AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D121DB89CF2001E77AD /* Main.storyboard */; };
-		EAFE2D161DB89CF2001E77AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D151DB89CF2001E77AD /* Assets.xcassets */; };
-		EAFE2D191DB89CF2001E77AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */; };
 		EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE2D231DB89CF2001E77AD /* FrogRiverOne.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EAFE2D201DB89CF2001E77AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EAFE2D031DB89CF2001E77AD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAFE2D0A1DB89CF2001E77AD;
-			remoteInfo = CodilityTraining;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		24320F4C1E2247D8001B5833 /* Peaks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peaks.swift; sourceTree = "<group>"; };
@@ -48,26 +33,12 @@
 		EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenomicRangeQuery.swift; sourceTree = "<group>"; };
 		EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxCounters.swift; sourceTree = "<group>"; };
 		EAF3F84F1DC77AC700D6FD4A /* CountDiv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDiv.swift; sourceTree = "<group>"; };
-		EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodilityTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAFE2D101DB89CF2001E77AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAFE2D131DB89CF2001E77AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EAFE2D151DB89CF2001E77AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EAFE2D181DB89CF2001E77AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EAFE2D1A1DB89CF2001E77AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFE2D1F1DB89CF2001E77AD /* CodilityTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFE2D231DB89CF2001E77AD /* FrogRiverOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogRiverOne.swift; sourceTree = "<group>"; };
 		EAFE2D251DB89CF2001E77AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EAFE2D081DB89CF2001E77AD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EAFE2D1C1DB89CF2001E77AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,7 +52,6 @@
 		EAFE2D021DB89CF2001E77AD = {
 			isa = PBXGroup;
 			children = (
-				EAFE2D0D1DB89CF2001E77AD /* CodilityTraining */,
 				EAFE2D221DB89CF2001E77AD /* CodilityTrainingTests */,
 				EAFE2D0C1DB89CF2001E77AD /* Products */,
 			);
@@ -90,18 +60,9 @@
 		EAFE2D0C1DB89CF2001E77AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */,
 				EAFE2D1F1DB89CF2001E77AD /* CodilityTrainingTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EAFE2D0D1DB89CF2001E77AD /* CodilityTraining */ = {
-			isa = PBXGroup;
-			children = (
-				EAFE2D2E1DB89D14001E77AD /* Supporting Files */,
-			);
-			path = CodilityTraining;
 			sourceTree = "<group>";
 		};
 		EAFE2D221DB89CF2001E77AD /* CodilityTrainingTests */ = {
@@ -124,19 +85,6 @@
 			path = CodilityTrainingTests;
 			sourceTree = "<group>";
 		};
-		EAFE2D2E1DB89D14001E77AD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EAFE2D0E1DB89CF2001E77AD /* AppDelegate.swift */,
-				EAFE2D101DB89CF2001E77AD /* ViewController.swift */,
-				EAFE2D121DB89CF2001E77AD /* Main.storyboard */,
-				EAFE2D151DB89CF2001E77AD /* Assets.xcassets */,
-				EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */,
-				EAFE2D1A1DB89CF2001E77AD /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		EAFE2D2F1DB89D1D001E77AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,23 +96,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EAFE2D0A1DB89CF2001E77AD /* CodilityTraining */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EAFE2D281DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTraining" */;
-			buildPhases = (
-				EAFE2D071DB89CF2001E77AD /* Sources */,
-				EAFE2D081DB89CF2001E77AD /* Frameworks */,
-				EAFE2D091DB89CF2001E77AD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CodilityTraining;
-			productName = CodilityTraining;
-			productReference = EAFE2D0B1DB89CF2001E77AD /* CodilityTraining.app */;
-			productType = "com.apple.product-type.application";
-		};
 		EAFE2D1E1DB89CF2001E77AD /* CodilityTrainingTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAFE2D2B1DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTrainingTests" */;
@@ -176,7 +107,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EAFE2D211DB89CF2001E77AD /* PBXTargetDependency */,
 			);
 			name = CodilityTrainingTests;
 			productName = CodilityTrainingTests;
@@ -193,12 +123,6 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = tm;
 				TargetAttributes = {
-					EAFE2D0A1DB89CF2001E77AD = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
 					EAFE2D1E1DB89CF2001E77AD = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4C34FT6ABU;
@@ -220,23 +144,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EAFE2D0A1DB89CF2001E77AD /* CodilityTraining */,
 				EAFE2D1E1DB89CF2001E77AD /* CodilityTrainingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EAFE2D091DB89CF2001E77AD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAFE2D191DB89CF2001E77AD /* LaunchScreen.storyboard in Resources */,
-				EAFE2D161DB89CF2001E77AD /* Assets.xcassets in Resources */,
-				EAFE2D141DB89CF2001E77AD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EAFE2D1D1DB89CF2001E77AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,15 +161,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EAFE2D071DB89CF2001E77AD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAFE2D111DB89CF2001E77AD /* ViewController.swift in Sources */,
-				EAFE2D0F1DB89CF2001E77AD /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EAFE2D1B1DB89CF2001E77AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,33 +180,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EAFE2D211DB89CF2001E77AD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EAFE2D0A1DB89CF2001E77AD /* CodilityTraining */;
-			targetProxy = EAFE2D201DB89CF2001E77AD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		EAFE2D121DB89CF2001E77AD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAFE2D131DB89CF2001E77AD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EAFE2D171DB89CF2001E77AD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAFE2D181DB89CF2001E77AD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EAFE2D261DB89CF2001E77AD /* Debug */ = {
@@ -412,34 +289,6 @@
 			};
 			name = Release;
 		};
-		EAFE2D291DB89CF2001E77AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = CodilityTraining/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CodilityTraining;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		EAFE2D2A1DB89CF2001E77AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = CodilityTraining/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.CodilityTraining;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		EAFE2D2C1DB89CF2001E77AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -476,15 +325,6 @@
 			buildConfigurations = (
 				EAFE2D261DB89CF2001E77AD /* Debug */,
 				EAFE2D271DB89CF2001E77AD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EAFE2D281DB89CF2001E77AD /* Build configuration list for PBXNativeTarget "CodilityTraining" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EAFE2D291DB89CF2001E77AD /* Debug */,
-				EAFE2D2A1DB89CF2001E77AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
