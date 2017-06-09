@@ -14,6 +14,18 @@ class Brackets: XCTestCase {
         assert(input: "", output: 1)
     }
 
+    func testOneCharIsProperlyNested() {
+        assert(input: "(a)", output: 1)
+        assert(input: "[B]", output: 1)
+        assert(input: "{c}", output: 1)
+    }
+
+    func testMultipleCharsIsProperlyNested() {
+        assert(input: "(aBc)", output: 1)
+        assert(input: "[Bc]", output: 1)
+        assert(input: "{ca}", output: 1)
+    }
+
     private func assert(input: String, output: Int) {
         let expected = output
         var string = input
