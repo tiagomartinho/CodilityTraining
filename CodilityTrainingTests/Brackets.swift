@@ -57,22 +57,24 @@ class Brackets: XCTestCase {
     }
 
     public func solution(_ S : inout String) -> Int {
-        let closeChars: Set<Character> = [")", "}", "]"]
         let nestChars: [Character:Character] = ["(":")", "{":"}", "[":"]"]
-        var openNest = [Character]()
-
+        var current = 0
+        var openNest = [Character](repeating: " ", count: S.characters.count)
         for char in S.characters {
-            if nestChars[char] != nil {
-                openNest.append(char)
-            } else {
-                if closeChars.contains(char) {
-                    if openNest.isEmpty { return 0 }
-                    let last = openNest.removeLast()
-                    guard let close = nestChars[last] else { return 0 }
-                    if close != char { return 0 }
-                }
+            switch char {
+            case ")", "}", "]":
+                if current <= 0 { return 0 }
+                current -= 1
+                let last = openNest[current]
+                guard let close = nestChars[last] else { return 0 }
+                if close != char { return 0 }
+            case "(", "{", "[":
+                openNest[current] = char
+                current += 1
+            default:
+                continue
             }
         }
-        return openNest.isEmpty ? 1 : 0
+        return current == 0 ? 1 : 0
     }
 }
