@@ -57,6 +57,7 @@ class Brackets: XCTestCase {
     }
 
     public func solution(_ S : inout String) -> Int {
+        let closeChars: Set<Character> = [")", "}", "]"]
         let nestChars: [Character:Character] = ["(":")", "{":"}", "[":"]"]
         var openNest = [Character]()
 
@@ -64,7 +65,7 @@ class Brackets: XCTestCase {
             if nestChars[char] != nil {
                 openNest.append(char)
             } else {
-                if nestChars.values.contains(char) {
+                if closeChars.contains(char) {
                     if openNest.isEmpty { return 0 }
                     let last = openNest.removeLast()
                     guard let close = nestChars[last] else { return 0 }
