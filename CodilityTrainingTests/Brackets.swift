@@ -61,23 +61,14 @@ class Brackets: XCTestCase {
         var openNest = [Character]()
 
         for char in S.characters {
-            let containsNesting = nestChars.contains { char == $0.0 || char == $0.1 }
-            if containsNesting {
-                if nestChars[char] != nil {
-                    openNest.append(char)
-                } else {
-                    if let last = openNest.last {
-                        openNest.removeLast()
-                        if let close = nestChars[last] {
-                            if close != char {
-                                return 0
-                            }
-                        } else {
-                            return 0
-                        }
-                    } else {
-                        return 0
-                    }
+            if nestChars[char] != nil {
+                openNest.append(char)
+            } else {
+                if nestChars.values.contains(char) {
+                    if openNest.isEmpty { return 0 }
+                    let last = openNest.removeLast()
+                    guard let close = nestChars[last] else { return 0 }
+                    if close != char { return 0 }
                 }
             }
         }
