@@ -47,81 +47,31 @@ class Fish: XCTestCase {
         XCTAssertEqual(1, result)
     }
 
-    func testSurvivorsUpstream() {
-        let downstreamFishes = [1, 2]
-        let upstreamFishes = [4, 3]
-
-        let result = survivors(downstreamFishes: downstreamFishes, upstreamFishes: upstreamFishes)
-
-        XCTAssertEqual(2, result)
-    }
-
-    func testSurvivorsDownstream() {
-        let downstreamFishes = [1, 2, 3]
-        let upstreamFishes = [Int]()
-
-        let result = survivors(downstreamFishes: downstreamFishes, upstreamFishes: upstreamFishes)
-
-        XCTAssertEqual(3, result)
-    }
-
-    func testSurvivorsUpstreamOnly() {
-        let downstreamFishes = [Int]()
-        let upstreamFishes = [1, 2, 3]
-
-        let result = survivors(downstreamFishes: downstreamFishes, upstreamFishes: upstreamFishes)
-
-        XCTAssertEqual(3, result)
-    }
-
-    func testSurvivorsDownstreamOnly() {
-        let downstreamFishes = [1, 2, 3]
-        let upstreamFishes = [Int]()
-
-        let result = survivors(downstreamFishes: downstreamFishes, upstreamFishes: upstreamFishes)
-
-        XCTAssertEqual(3, result)
-    }
-
-    func testSurvivorsShark() {
-        let downstreamFishes = [1, 2, 3]
-        let upstreamFishes = [10]
-
-        let result = survivors(downstreamFishes: downstreamFishes, upstreamFishes: upstreamFishes)
-
-        XCTAssertEqual(1, result)
-    }
-
     public func solution(_ A : inout [Int], _ B : inout [Int]) -> Int {
         guard A.count == B.count else { return 0 }
 
-        var downstreamFishes = [Int]()
+        var downstreamCount = 0
         var upstreamFishes = [Int]()
         for (index, direction) in B.enumerated() {
 
+            let currentFish = A[index]
             let isDownstream = direction == 1
 
-            if (isDownstream && !downstreamFishes.isEmpty && !upstreamFishes.isEmpty) || (isDownstream && !upstreamFishes.isEmpty) {
-                var remainingA = Array(A.suffix(from: index))
-                var remainingB = Array(B.suffix(from: index))
-                return survivors(downstreamFishes: downstreamFishes, upstreamFishes: upstreamFishes) + solution(&remainingA, &remainingB)
-            }
-
-            isDownstream ? downstreamFishes.append(A[index]) : upstreamFishes.append(A[index])
-        }
-        return survivors(downstreamFishes: downstreamFishes, upstreamFishes: upstreamFishes)
-    }
-
-    public func survivors(downstreamFishes: [Int], upstreamFishes: [Int]) -> Int {
-        var downstream = downstreamFishes
-        var upstream = upstreamFishes
-        while !downstream.isEmpty && !upstream.isEmpty {
-            if downstream.first! > upstream.first! {
-                upstream.removeFirst()
+            if isDownstream {
+                upstreamFishes.append(currentFish)
             } else {
-                downstream.removeFirst()
+                downstreamCount += 1
+                while !upstreamFishes.isEmpty {
+                    let upstreamFish = upstreamFishes.removeLast()
+                    if currentFish < upstreamFish {
+                        upstreamFishes.append(upstreamFish)
+                        downstreamCount -= 1
+                        break
+                    }
+                }
             }
         }
-        return downstream.count + upstream.count
+        return downstreamCount + upstreamFishes.count
     }
 }
+
