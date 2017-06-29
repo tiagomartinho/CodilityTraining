@@ -17,6 +17,7 @@
 		24D0178F1DFACEA700E92AB8 /* Distinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0178E1DFACEA700E92AB8 /* Distinct.swift */; };
 		24D017911DFAD01400E92AB8 /* MaxProductOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */; };
 		24E3E7A11DFC1BE700E2DCE6 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3E7A01DFC1BE700E2DCE6 /* Triangle.swift */; };
+		24EE55BE1F0554AA00929C14 /* StoneWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE55BD1F0554AA00929C14 /* StoneWall.swift */; };
 		EA6CFA241DBBC8F900886BA0 /* PassingCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */; };
 		EAB074C41DD3584D001416D9 /* GenomicRangeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */; };
 		EAD3F55A1DB9FF0300C1CF92 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */; };
@@ -35,6 +36,7 @@
 		24D0178E1DFACEA700E92AB8 /* Distinct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distinct.swift; sourceTree = "<group>"; };
 		24D017901DFAD01400E92AB8 /* MaxProductOfThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxProductOfThree.swift; sourceTree = "<group>"; };
 		24E3E7A01DFC1BE700E2DCE6 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		24EE55BD1F0554AA00929C14 /* StoneWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneWall.swift; sourceTree = "<group>"; };
 		EA6CFA231DBBC8F900886BA0 /* PassingCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassingCars.swift; sourceTree = "<group>"; };
 		EAB074C31DD3584D001416D9 /* GenomicRangeQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenomicRangeQuery.swift; sourceTree = "<group>"; };
 		EAD3F5591DB9FF0300C1CF92 /* MaxCounters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxCounters.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				243D80F51EEAD2E100CBD3B4 /* Brackets.swift */,
 				245C81071EFBC77A00692F7D /* Nesting.swift */,
 				245C81091EFBC92600692F7D /* Fish.swift */,
+				24EE55BD1F0554AA00929C14 /* StoneWall.swift */,
 			);
 			path = CodilityTrainingTests;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			files = (
 				EAB074C41DD3584D001416D9 /* GenomicRangeQuery.swift in Sources */,
 				EAFE2D241DB89CF2001E77AD /* FrogRiverOne.swift in Sources */,
+				24EE55BE1F0554AA00929C14 /* StoneWall.swift in Sources */,
 				24320F4D1E2247D8001B5833 /* Peaks.swift in Sources */,
 				245C81081EFBC77A00692F7D /* Nesting.swift in Sources */,
 				24D0178F1DFACEA700E92AB8 /* Distinct.swift in Sources */,
