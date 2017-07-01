@@ -42,14 +42,40 @@ class StoneWall: XCTestCase {
         XCTAssertEqual(3, result)
     }
 
+    func testTwoDimensionsNotContiguousWallUpward() {
+        var H = [5, 6, 5]
+
+        let result = solution(&H)
+
+        XCTAssertEqual(2, result)
+    }
+
+    func testThreeTowersWall() {
+        var H = [1, 0, 1, 0, 1]
+
+        let result = solution(&H)
+
+        XCTAssertEqual(3, result)
+    }
+
     public func solution(_ H : inout [Int]) -> Int {
-        var heights = Set<Int>()
+        var heights = [[Int]]()
         for height in H {
-            if !heights.contains(height) {
-                heights.insert(height)
+            if let lastHeight = heights.last?.last {
+                if height != lastHeight {
+                    let count = heights.count-1
+                    if height < lastHeight {
+                        heights[count].append(height)
+                    } else {
+                        heights[count].insert(height, at: 0)
+                    }
+                }
+            } else {
+                heights.append([height])
             }
         }
-        return heights.count
+        heights = heights.map { $0.filter { $0 != 0 } }
+        return heights.reduce(0) { $0 + $1.count }
     }
 }
 
