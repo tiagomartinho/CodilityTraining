@@ -2,12 +2,12 @@ import XCTest
 
 class StoneWall: XCTestCase {
 
-    func DISABLED_testExample() {
+    func testExample() {
         var H = [8, 8, 5, 7, 9, 8, 7, 4, 8]
 
         let result = solution(&H)
 
-        XCTAssertEqual(9, result)
+        XCTAssertEqual(7, result)
     }
 
     func testEmptyWall() {
@@ -50,32 +50,19 @@ class StoneWall: XCTestCase {
         XCTAssertEqual(2, result)
     }
 
-    func testThreeTowersWall() {
-        var H = [1, 0, 1, 0, 1]
-
-        let result = solution(&H)
-
-        XCTAssertEqual(3, result)
-    }
-
     public func solution(_ H : inout [Int]) -> Int {
-        var heights = [[Int]]()
+        var count = 0
+        var heights = [Int]()
         for height in H {
-            if let lastHeight = heights.last?.last {
-                if height != lastHeight {
-                    let count = heights.count-1
-                    if height < lastHeight {
-                        heights[count].append(height)
-                    } else {
-                        heights[count].insert(height, at: 0)
-                    }
-                }
-            } else {
-                heights.append([height])
+            while !heights.isEmpty && heights.last! > height {
+                heights.removeLast()
+            }
+            if heights.isEmpty || heights.last! < height {
+                heights.append(height)
+                count += 1
             }
         }
-        heights = heights.map { $0.filter { $0 != 0 } }
-        return heights.reduce(0) { $0 + $1.count }
+        return count
     }
 }
 
