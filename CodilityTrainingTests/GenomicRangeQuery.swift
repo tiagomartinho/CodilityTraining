@@ -67,9 +67,9 @@ class GenomicRangeQuery: XCTestCase {
     }
 
     public func computePrefixes(_ S: String) -> [[Int]] {
-        let characters = [Int](repeating: 0, count: S.characters.count)
+        let characters = [Int](repeating: 0, count: S.count)
         var prefixSum = [[Int]](repeating: characters, count: impactFactors.count)
-        for (index,nucleotide) in S.characters.enumerated() {
+        for (index,nucleotide) in S.enumerated() {
             if(nucleotide == "A") {
                 prefixSum[0][index] = 1
             }
@@ -83,7 +83,7 @@ class GenomicRangeQuery: XCTestCase {
                 prefixSum[3][index] = 1
             }
         }
-        for i in 1..<S.characters.count {
+        for i in 1..<S.count {
             for (j,_) in impactFactors.enumerated() {
                 prefixSum[j][i] += prefixSum[j][i-1]
             }

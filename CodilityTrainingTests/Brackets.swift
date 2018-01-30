@@ -59,8 +59,8 @@ class Brackets: XCTestCase {
     public func solution(_ S : inout String) -> Int {
         let nestChars: [Character:Character] = ["(":")", "{":"}", "[":"]"]
         var current = 0
-        var openNest = [Character](repeating: " ", count: S.characters.count)
-        for char in S.characters {
+        var openNest = [Character](repeating: " ", count: S.count)
+        for char in S {
             switch char {
             case ")", "}", "]":
                 if current <= 0 { return 0 }
